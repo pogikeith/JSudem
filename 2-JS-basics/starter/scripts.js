@@ -12,3 +12,4 @@ console.log(job);
 
 job = 'teacher';
 console.log(job); 
+

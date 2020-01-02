@@ -734,3 +734,8 @@ if (john.average > mark.average) {
     console.log(mark.fullName + '\'s family pays higher tips, with an average of $' + mark.average);
 }
 */
+
+var firstName = 'John';
+var age = 28; 
+
+console.log(firstName + ' ' + age);
