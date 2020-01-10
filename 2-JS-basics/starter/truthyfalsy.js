@@ -1,4 +1,4 @@
-//Truthy and Falsy values and equality operators
+
 
 // falsy values: undefined, null, 0, '', NaN
 // truthy values: NOT falsy values
