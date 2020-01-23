@@ -6,13 +6,37 @@ GAME RULES:
 - BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
-
 */
-var scores, roundScore, activePlayer, dice;
+var scores, roundScore, activePlayer;
 
 scores = [0,0]; 
 roundScore= 0; 
 activePlayer = 0; 
 
-dice = Math.floor(Math.random() * 6) + 1; 
-console.log(dice)
+document.querySelector('.dice').style.display = 'none';
+
+document.getElementById('score-0').textContent = '0'; 
+document.getElementById('score-1').textContent = '0'; 
+document.getElementById('score-0').textContent = '0'; 
+document.getElementById('score-1').textContent = '0'; 
+
+document.querySelector('btn-roll').addEventListener('click', function() {
+    //do something here
+    //random number
+    var dice = Math.floor(Math.random() * 6) + 1;
+
+    //display result
+    var diceDom = document.querySelector('.dice');
+    diceDom.style.display = 'block';
+    diceDom.src = 'dice-' + dice + '.png'; 
+    //update the round score if rolled number not a 1
+
+});
+
+
+
+
+
+// document.querySelector('#current-' + activePlayer).textContent = dice; 
+
+// var x = document.querySelector('#score-0').textContent;
